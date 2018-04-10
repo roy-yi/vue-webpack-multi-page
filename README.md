@@ -26,5 +26,54 @@ npm run e2e
 # run all tests
 npm test
 ```
+## Structure Tree
+```
+├──README.md
+├──build
+│   ├─build.js
+│   ├─utils.js
+│   ├─vue-loader.conf.js
+│   ├─webpack.base.conf.js
+│   ├─webpack.dev.confjs
+│   └─webpack.prod.conf.js
+├──config
+│   ├─dev.env.js
+│   ├─index.js
+│   ├─prod.env.js
+│   └─test.env.js
+├──src
+│   └─pages   // Multi pages directory
+│       ├─busitest    // Page 1
+│       │     ├─index.js       // new Vue
+│       │     ├─index.vue
+│       │     ├─route.js       // vue-router for page1
+│       │     └─score.vue
+│       ├─busitest2   // Page 2
+│       │     ├─index.js
+│       │     ├─index.vue
+│       │     ├─route.js       // vue-router for page2
+│       │     └─score.vue
+│       └─app.vue     // Root
+├──.babelrc
+├──.editorconfig
+├──.eslintignore
+├──.eslintrc.js
+├──.gitignore
+├──.postcssrc.js
+├──app.json     // Pages config
+├──index.html   // html template
+├──package-lock.json
+└──package.json
+```
+## How to create a new page
+1. Create a folder under `src/pages`, and then config the folder name in `app.json` (The entry name in app.json should be the same as the folder name).
+2. Create `index.js`, `route.js` and `index.vue` into your new folder
+3. Config router in `route.js` as sample shows
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Advantages
+1. All pages uses one template `index.html`
+2. Build pages as `app.json` configured
+3. Pages use its own vue-router separately
+
+## Notice
+If you don't want to build any page, just remove it from `app.json`. Then webpack won't build it.
