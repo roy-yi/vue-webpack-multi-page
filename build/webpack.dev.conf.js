@@ -108,7 +108,7 @@ module.exports = new Promise((resolve, reject) => {
       // add port to devServer config
       devWebpackConfig.devServer.port = port
       // add console tips for ready pages
-      let readyPages = pages.map(p => ' -- Page ' + chalk.green(`http://${devWebpackConfig.devServer.host}:${port}/${p}`) + ' is ready.\n')
+      let readyPages = pages.map(p => 'Page ' + chalk.green(`http://${devWebpackConfig.devServer.host}:${port}/${p}`) + ' is ready.\n')
       // Add FriendlyErrorsPlugin
       devWebpackConfig.plugins.push(new FriendlyErrorsPlugin({
         compilationSuccessInfo: {
