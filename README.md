@@ -1,6 +1,6 @@
-# dzg
+# Vue Webpack Multi Page
 
-> dzg HTML generator
+> Vue+Webpack Multi Page HTML generator
 
 ## Build Setup
 
