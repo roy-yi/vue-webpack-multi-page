@@ -1,5 +1,5 @@
 <template>
-  <div class="score-title">12<span class="unit">分</span></div>
+  <div class="score-title">12<span class="unit">Pts</span></div>
 </template>
 <script type="text/babel">
 export default {
