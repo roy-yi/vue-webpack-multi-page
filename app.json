@@ -1,0 +1,21 @@
+{
+  "pages": [
+    {
+      "entry": "busitest",
+      "title": "busitest",
+      "cdn": {}
+    },
+    {
+      "entry": "busitest2",
+      "title": "busitest2",
+      "cdn": {}
+    }
+  ],
+  "basePath": "./src/pages/",
+  "cdn": {
+    "js": [
+      "//cdn.bootcss.com/fetch/2.0.4/fetch.min.js"
+    ],
+    "css": []
+  }
+}
