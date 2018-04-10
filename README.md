@@ -71,7 +71,7 @@ npm test
 3. Config router in `route.js` as sample shows
 
 ## Advantages
-1. All pages uses one template `index.html`
+1. All pages use one common template `index.html`
 2. Build pages as `app.json` configured
 3. Pages use its own vue-router separately
 
