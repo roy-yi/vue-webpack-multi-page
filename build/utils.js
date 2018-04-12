@@ -105,7 +105,7 @@ exports.createNotifierCallback = () => {
 exports.entries = () => {
   var result = {}
   app.pages.forEach(p => {
-    result[p.entry] = path.resolve(app.basePath, p.entry)
+    result[p.entry] = ['babel-polyfill', 'es6-promise', path.resolve(app.basePath, p.entry)]
   })
   return result
 }

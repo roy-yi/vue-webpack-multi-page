@@ -42,6 +42,10 @@ npm test
 │   ├─prod.env.js
 │   └─test.env.js
 ├──src
+│   ├─assets
+│   │    └─css
+│   │       └─base.css  // common css
+│   │
 │   └─pages   // Multi pages directory
 │       ├─busitest    // Page 1
 │       │     ├─index.js       // new Vue

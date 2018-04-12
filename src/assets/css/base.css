@@ -1,0 +1,18 @@
+.clear-float {
+  zoom: 1;
+}
+.clear-float:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+  padding-left: 10px;
+  border-radius: 0;
+}

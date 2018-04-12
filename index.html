@@ -8,7 +8,7 @@
     <% for (var i in htmlWebpackPlugin.options.cdn.css) { %>
     <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.cdn.css[i] %>"><% } %>
   </head>
-  <body>
+  <body style="height: 100%;">
     <div id="app"></div>
     <% for (var i in htmlWebpackPlugin.options.cdn.js) { %>
     <!-- built files will be auto injected -->
