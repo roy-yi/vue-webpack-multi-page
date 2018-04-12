@@ -47,24 +47,24 @@ npm test
 │   │       └─base.css  // common css
 │   │
 │   └─pages   // Multi pages directory
-│       ├─busitest    // Page 1
-│       │     ├─index.js       // new Vue
-│       │     ├─index.vue
-│       │     ├─route.js       // vue-router for page1
-│       │     └─score.vue
-│       ├─busitest2   // Page 2
-│       │     ├─index.js
-│       │     ├─index.vue
-│       │     ├─route.js       // vue-router for page2
-│       │     └─score.vue
-│       └─app.vue     // Root
+│       ├─page1    // Page 1
+│       │    ├─index.js      // new Vue
+│       │    ├─index.vue
+│       │    ├─route.js       // vue-router for page1
+│       │    └─score.vue
+│       ├─page2   // Page 2
+│       │    ├─index.js
+│       │    ├─index.vue
+│       │    ├─route.js       // vue-router for page2
+│       │    └─score.vue
+│       └─app.vue  // Root
 ├──.babelrc
 ├──.editorconfig
 ├──.eslintignore
 ├──.eslintrc.js
 ├──.gitignore
 ├──.postcssrc.js
-├──app.json     // Pages config
+├──app.json    // Pages config
 ├──index.html   // html template
 ├──package-lock.json
 └──package.json
