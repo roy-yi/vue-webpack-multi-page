@@ -1,13 +1,13 @@
 {
   "pages": [
     {
-      "entry": "busitest",
-      "title": "busitest",
+      "entry": "page1",
+      "title": "title of page1",
       "cdn": {}
     },
     {
-      "entry": "busitest2",
-      "title": "busitest2",
+      "entry": "page2",
+      "title": "title of page2",
       "cdn": {}
     }
   ],

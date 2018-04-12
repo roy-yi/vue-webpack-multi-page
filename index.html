@@ -10,11 +10,11 @@
   </head>
   <body style="height: 100%;">
     <div id="app"></div>
-    <% for (var i in htmlWebpackPlugin.options.cdn.js) { %>
     <!-- built files will be auto injected -->
+    <% for (var i in htmlWebpackPlugin.options.cdn.js) { %>
     <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script><% } %>
     <script>
-      // 为IE版本<=10的浏览器加上window.location.origin属性
+      // Add property window.location.origin to IE that version <= 10
       if (!window.location.origin) {
         window.location.origin = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '')
       }

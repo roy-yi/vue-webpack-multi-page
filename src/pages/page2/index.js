@@ -1,24 +1,16 @@
 import Vue from 'vue'
 import App from '../app'
-// import Mint from 'mint-ui'
-// import 'mint-ui/lib/style.css'
 import VueRouter from 'vue-router'
 import routes from './route'
-
-// import VueJsonp from 'vue-jsonp'
-// Vue.use(VueJsonp)
 
 document.addEventListener('DOMContentLoaded', function () {
   if (window.FastClick) window.FastClick.attach(document.body)
 }, false)
 
-// Vue.use(Mint)
 Vue.use(VueRouter)
 
-// Vue.http.options.emulateJSON = true
-
 const router = new VueRouter({
-  routes // （缩写）相当于 routes: routes
+  routes // （abbr.）equals-> routes: routes
 })
 
 new Vue({ // eslint-disable-line
